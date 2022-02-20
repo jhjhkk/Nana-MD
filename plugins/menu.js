@@ -29,33 +29,32 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-╭────ꕥ %me ꕥ────
-│✾ Version: %version
-│✾ Library: Baileys-MD
-│✾ Runtime: %uptime
-╰❑
-╭─❑ 「 INFO USER 」 ❑──
-│ ✾ Name: %name
-│ ✾ Total Features : ${totalfeature}
-│ ✾ Limit: %limit
-│ ✾ Money: %money
-│ ✾ Exp: %totalexp
-│ ✾ Level: %level
-│ ✾ Role: %role
-│ ✾ Number of Registered Users : %rtotalreg From %totalreg
-╰❑
-╭─❑ 「 INFORMASI 」 ❑──
-│ Bot ini masih tahap beta
-│ apabila ada bug/eror harap
-│ lapor ke owner
-╰❑
+𝖧𝖺𝗂, %name!
+╭─━──────────┈━➢ 
+│ *𝘓𝘖𝘙𝘋-𝘖𝘍𝘍𝘐𝘊𝘐𝘈𝘓🐦*
+╰┬━───────────━➢
+┌┤      *「 𝗠𝗘𝗡𝗨 」*
+││👁️‍🗨️𝐋𝐈𝐁𝐑𝐀𝐑𝐘: 𝑩𝑨𝑰𝑳𝑬𝒀𝑺-𝑴𝑫
+││🍭𝐌𝐎𝐃𝐄: ${global.opts['self'] ? '𝑺𝑬𝑳𝑭' : '𝑷𝑼𝑩𝑳𝑰𝑪'}
+││🌀𝐑𝐔𝐍𝐓𝐈𝐌𝐄: %uptime
+││🗣️𝐍𝐀𝐌𝐄: %name
+││🗽𝐒𝐓𝐀𝐓𝐔𝐒: ---
+││🍋𝐋𝐈𝐌𝐈𝐓: %limit
+││💰𝐌𝐎𝐍𝐄𝐘: %money
+││💫𝐄𝐗𝐏: %totalexp
+││✨𝐋𝐄𝐕𝐄𝐋: %level
+││👤𝐑𝐎𝐋𝐄: %role
+│└────────────┈ ⳹
+│       *「 𝑂𝑡ℎ𝑒𝑟 」*
+│◦➛ 𝙋𝙍𝙀𝙁𝙄𝙓 : 𝖬𝖴𝖫𝖳𝖨
+│◦➛ 𝙂𝙄𝙏𝙃𝙐𝘽 : https://github.com/Lord-official
+╰─━─────────┈┈━➢
 %readmore`.trimStart(),
   header: '╭─「 %category 」',
   body: '│ • %cmd %islimit %isPremium',
   footer: '╰────\n',
   after: `
-*%npmname@^%version*
-${'```%npmdesc```'}
+© 𝙻𝙾𝚁𝙳 𝙾𝙵𝙲
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p }) => {
@@ -167,34 +166,34 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
            hydratedFooterText: 'Nana-MD',
            hydratedButtons: [{ 
              urlButton: {
-               displayText: 'Source Code',
-               url: 'https://github.com/adulalhy/Nana-MD'
+               displayText: '𝑆𝑜𝑢𝑟𝑐𝑒 𝐶𝑜𝑑𝑒',
+               url: 'https://github.com/Lord-official'
              }
 
            },
                {
              callButton: {
-               displayText: 'Call Owner',
-               phoneNumber: '123'
+               displayText: '𝐶𝑎𝑙𝑙 𝑂𝑤𝑛𝑒𝑟',
+               phoneNumber: '9778383987'
              }
            },
                {
              quickReplyButton: {
-               displayText: 'Owner',
+               displayText: '𝑂𝑤𝑛𝑒𝑟',
                id: '.owner'
              }
 
            },
                {
              quickReplyButton: {
-               displayText: 'Donasi',
+               displayText: '𝐻𝑒ℎ𝑒',
                id: '.donasi'
              }
 
            },
                {
              quickReplyButton: {
-               displayText: 'Speed',
+               displayText: '𝑆𝑝𝑒𝑒𝑑',
                id: '.ping'
              }
 
@@ -209,7 +208,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
          { messageId: template.key.id }
      )
   } catch (e) {
-    conn.reply(m.chat, 'Maaf, menu sedang error', m)
+    conn.reply(m.chat, 'ᴇʀʀᴏʀ ɪɴ sᴇɴᴅɪɴɢ ᴍᴇɴᴜ', m)
     //throw e
   }
 }

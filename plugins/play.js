@@ -22,8 +22,8 @@ const cardJoox = new canvas.Spotify()
                 cardJoox.build()
                     .then(async (buffer) => {
                     conn.sendFile(m.chat, buffer, '', `
-*Title:* ${title}
-*Filesize:* ${filesizeF}
+*العنوان:* ${title}
+*الحجم:* ${filesizeF}
 ${isLimit ? '*Pakai Link:* '+await bitly(dl_link): ''}
 `,m )
                     })

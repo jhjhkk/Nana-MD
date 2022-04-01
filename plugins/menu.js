@@ -8,33 +8,33 @@ let totalfeature = Object.values(global.plugins).filter(
     (v) => v.help && v.tags
   ).length;
 let tags = {
-  'main': 'MENU UTAMA',
-  'game': 'MENU GAME',
-  'rpg': 'MENU RPG',
-  'xp': 'MENU EXP',
-  'group': 'MENU GROUP',
-  'owner': 'MENU OWNER',
-  'fun': 'MENU FUN',
-  'sticker': 'MENU CONVERT',
-  'maker': 'MENU MAKER',
-  'github': 'MENU GITHUB',
-  'internet': 'INTERNET',
-  'kerang': 'MENU KERANG',
-  'anime': 'MENU ANIME',
-  'nsfw': 'MENU NSFW',
-  'tools': 'MENU TOOLS',
-  'advanced': 'ADVANCED',
-  'privasi': 'MENU PRIVASI',
-  'info': 'MENU INFO',
+  'main': 'الــقــائـمـة الاســاسـيــة',
+  'game': 'قــائــمــة الالــعـاب',
+  'rpg': 'قــائــمــة RPG',
+  'xp': 'قــائــمــة النـقــاط',
+  'group': 'قــائــمــة المجومــــــوعــة',
+  'owner': 'قــائــمــة الــمــالـک',
+  'fun': 'قــائــمــة المــتــعـة',
+  'sticker': 'ســتــيــكـر',
+  'maker': 'قــائــمــة الــصـنــع',
+  'github': 'قــائــمــة المــوقــع',
+  'internet': 'الــنــت',
+  'kerang': 'مــدرے ھےھےھےھےھے',
+  'anime': 'أنــمـے',
+  'nsfw': ' قــائــمــة nsfw',
+  'tools': 'الــأدوات',
+  'advanced': 'العــضويــة',
+  'privasi': 'عــشـوائــے',
+  'info': 'معـلــومــات',
 }
 const defaultMenu = {
   before: `
 𝖧𝖺𝗂, %name!
 ╭─━──────────┈━➢ 
-│ *𝘓𝘖𝘙𝘋-𝘖𝘍𝘍𝘐𝘊𝘐𝘈𝘓🐦*
+│ *شــنـوبــو بــوت🐦*
 ╰┬━───────────━➢
 ┌┤      *「 الــقــائــمة 」*
-││🍭الــوضــــع: ${global.opts['self'] ? '𝑺𝑬𝑳𝑭' : '𝑷𝑼𝑩𝑳𝑰𝑪'}
+││🍭الــوضــــع: ${global.opts['self'] ? 'خــاص' : 'عــام'}
 ││🌀الــمــدة: %uptime
 ││🗣️الاســم: %name
 ││🗽البــيــو: ---

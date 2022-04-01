@@ -7,8 +7,8 @@ handler.before = async function (m, { isAdmin, isBotAdmin }) {
   let ValidLink = (m.text.includes('https://') || m.text.includes('http://'))
   if (chat.antiLink && ValidLink && !isAdmin && !m.isBaileys && m.isGroup) {
     let thisGroup = isBotAdmin ? `https://chat.whatsapp.com/${await conn.groupInviteCode(m.chat)}` : 0
-    if (m.text.includes(thisGroup) && thisGroup != 0) throw false // jika link grup itu sendiri gak dikick
-    await conn.reply(m.chat, `*Link Terdeteksi!*${isBotAdmin ? '' : '\n\nbukan admin jadi gabisa kick t_t'}\n\nKetik *.off antilink* untuk mematikan fitur ini${opts['restrict'] ? '' : '\nketik *.on restrict* supaya bisa kick'}`, '', '', '', m)
+    if (m.text.includes(thisGroup) && this Group != 0) throw false //  ذا لم يتم طرد رابط المجموعة نفسه
+    await conn.reply(m.chat, `*تم اكتشاف الرابط!*${isBotAdmin ? '': '\n\nلست مشرفًا لذا لا يمكن ترك t_t'} \ n \ n اكتب * .off antilink * لإيقاف هذه الميزة $ {opts ['limits']؟ '': '\ ntype * .on limits * to kick'} "، ''، ''، ''، m)
     if (global.opts['restrict']) {
       if (isBotAdmin) this.groupRemove(m.chat, [m.sender])
     }

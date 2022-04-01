@@ -22,13 +22,13 @@ const cardJoox = new canvas.Spotify()
                 cardJoox.build()
                     .then(async (buffer) => {
                     conn.sendFile(m.chat, buffer, '', `
-*Title:* ${title}
-*Filesize:* ${filesizeF}
-${isLimit ? '*Pakai Link:* '+await bitly(dl_link): ''}
+*الــعــنــوان:* ${title}
+*الــحــجـم:* ${filesizeF}
+${isLimit ? '*الرابــط:* '+await bitly(dl_link): ''}
 `,m )
                     })
       if (isVideo) {
-   if (!isLimit) conn.sendMessage(m.chat, { video: await getBuffer(dl_link), caption: title }, { quoted: m, mimetype: 'video/mp4',  upload: conn.waUploadToServer })
+   if (!isLimit) conn.sendMessage(m.chat, { video: await getBuffer(dl_link), caption: title }, { quoted: m, mimetype: 'فــديــو/mp4',  نــزل يــوم: conn.waUploadToServer })
    } else {
    if (!isLimit) conn.sendMessage(m.chat, { audio: await getBuffer(dl_link) }, { mimetype: 'audio/mp4', quoted: m,  upload: conn.waUploadToServer })
    }
